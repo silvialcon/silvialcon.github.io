@@ -1,81 +1,131 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <title>PORTFOLIO</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="estilos/general.css" />
+<link rel="stylesheet" href="estilos/portfolio.css" />
 
 </head>
 <body>
 
 	<header id="header">
+		<span style="margin-left:-230px;font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 		<h1>Silvia Alcón</h1>
+		<img id= "logotipo" src="meap.png" alt="logotipo">
 	</header>
 
-	<section id="wrap1" class="wrap">
-
+<div class="sidenav" id="mySidenav">
+		<div>
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html">Home</a>
+		<a href="portfolio.html">Portfolio</a>
+		<a href="about.html">About</a>
+		<a href="contactus.html">Contact</a>
+		</div>
+		<div class="bottom">
+		<ul>
+			<li style="display: inline-block; float:left"><a href="http://www.instagram.com"><img class= "redes" src="insta_logo.png" alt="logotipo"></a></li>
+			<li style="display: inline-block; float:left"><a href="http://www.twitter.com"><img class= "redes" src="fotos/twitter.png" alt="logotipo"></a></li>
+			<li style="display: inline-block; float:left"><a href="http://www.linkedin.com"><img class= "redes" src="fotos/linkedin.png" alt="logotipo"></a></li>
+		</ul>
+		</div>
+</div>
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img src = "fotos/1.jpg" class="modal-content" id="img01" alt="img01">
+  <div id="caption"></div>
+</div>
+<div class="gal">
 	<div>
-      <nav>
-       <ul class="navegador">
+		<div class="galeria" onclick="image('myImg')">
+			<img id="myImg" class="img_gal" src="fotos/1.jpg" alt="Clonk">
+			<div class="desc">Clonk</div>
+		</div>
 
-              <li> <a class= "enlace" href="index.html"><b>HOME</b></a> </li>
-              <li> <a class= "enlace" href="portfolio.html"><b>PORTFOLIO</b></a>  </li>
-              <li> <a class= "enlace" href="about.html"><b>ABOUT</b></a> </li>
-              <li> <a class= "enlace" href="contactus.html"><b>CONTACT US</b></a> </li>
-          </ul>
-       </nav>
-     </div>
-	
-		<article class="container container1">
+		<div class="galeria" onclick="image('myImg2')">
+		<img id="myImg2" class="img_gal" src="fotos/2.png" alt="Concetp">
+		<div class="desc">Concetp Varios</div>
+		</div>
 
-			<div class="caja caja1">
-				<p></p>
-				<img src="fotos/1.jpg">
-			</div>
-			<div class="caja caja2">
-				<p></p>
-				<img src="fotos/2.png">
-			</div>
-			<div class="caja caja3">
-				<p></p>
-				<img src="fotos/3.jpg">
-			</div>
-			<div class="caja caja4">
-				<p></p>
-				<img src="fotos/4.jpg">
-			</div>
-			<div class="caja caja5">
-				<p></p>
-				<img src="fotos/5.jpg">
-			</div>
-			<div class="caja caja6">
-				<p></p>
-				<img src="fotos/6.jpg">
-			</div>
-			<div class="caja caja7">
-				<p></p>
-				<img src="fotos/7.png">
-			</div>
-			<div class="caja caja8">
-				<p></p>
-				<img src="fotos/coche.jpg">
-			</div>
-			<div class="caja caja9">
-				<p></p>
-				<img src="fotos/robot.jpg">
-			</div>
-		</article>
-	</section>
+		<div class="galeria" onclick="image('myImg3')">
+		<img id="myImg3" class="img_gal" src="fotos/3.jpg" alt="Paisaje">
+		<div class="desc">Paisaje</div>
+		</div>
+
+		<div class="galeria" onclick="image('myImg4')">
+		<img id="myImg4" class="img_gal" src="fotos/4.jpg" alt="Campesino">
+		<div class="desc">Campesino</div>
+		</div>
+		
+		<div class="galeria" onclick="image('myImg5')">
+		<img id="myImg5" class="img_gal" src="fotos/5.jpg" alt="Interior">
+		<div class="desc">Interior</div>
+		</div>
+		
+		<div class="galeria" onclick="image('myImg6')">
+		<img id="myImg6" class="img_gal" src="fotos/6.jpg" alt="Greg">
+		<div class="desc">Greg</div>
+		</div>
+		
+		<div class="galeria" onclick="image('myImg7')">
+		<img id="myImg7" class="img_gal" src="fotos/7.png" alt="Tony">
+		<div class="desc">Tony</div>
+		</div>
+		
+		<div class="galeria" onclick="image('myImg8')">
+		<img id="myImg8" class="img_gal" src="fotos/coche.jpg" alt="2-H">
+		<div class="desc">2-H</div>
+		</div>
+		
+		<div class="galeria" onclick="image('myImg9')">
+		<img id="myImg9" class="img_gal" src="fotos/robot.jpg" alt="Eddy">
+		<div class="desc">Eddy</div>
+		</div>
+		
+		<div class="galeria" onclick="image('myImg10')">
+		<img id="myImg10" class="img_gal" src="fotos/8.jpg" alt="Claire">
+		<div class="desc">Claire</div>
+		</div>
+
+		</div>
+		</div>
 	
 	<footer id="footer">
-		    <img id= "logotipo" src="insta_logo.png" alt="logotipo">
-          <span> @silvialcon </span>
-     <div id= "contactos">
          <p><b>Tlf:</b> XXX XXX XXX</p>
          <p><b>E-mail:</b>silvialcon@gmail.com</p>
-    </div>
-	</header>	
+	</footer>
+	<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+function image(img_id){
+	var modal = document.getElementById('myModal');
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById(img_id);
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+	img.onclick = function(){
+	modal.style.display = "block";
+	modalImg.src = this.src;
+	captionText.innerHTML = this.alt;
+	}
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+	modal.style.display = "none";
+	return img;
+	}
+}
+
+</script>
 
 </body>
 </html>

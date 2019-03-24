@@ -1,0 +1,10 @@
+. container{
+    font-size: 20px;
+    color: #666;
+    width: 33.33%;
+    height: 33.33%;	
+}
+.caja {
+	background-color: #F0F0DF;
+	margin-top: 5%;
+}

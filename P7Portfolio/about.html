@@ -1,46 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <title>PORTFOLIO</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="estilos/general.css" />
+<link rel="stylesheet" href="estilos/about.css" />
 
 </head>
 <body>
 
 	<header id="header">
+		<span style="margin-left:-230px;font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 		<h1>Silvia Alcón</h1>
+		<img id= "logotipo" src="meap.png" alt="lo">
 	</header>
-
-	<section id="wrap1" class="wrap">
-
-	<div>
-      <nav>
-       <ul class="navegador">
-
-              <li> <a class= "enlace" href="index.html"><b>HOME</b></a> </li>
-              <li> <a class= "enlace" href="portfolio.html"><b>PORTFOLIO</b></a>  </li>
-              <li> <a class= "enlace" href="about.html"><b>ABOUT</b></a> </li>
-              <li> <a class= "enlace" href="contactus.html"><b>CONTACT US</b></a> </li>
-          </ul>
-       </nav>
-     </div>
-	
-		<article class="container container1">
-
-			
-		</article>
-	</section>
-	
-	<footer id="footer">
-		    <img id= "logotipo" src="insta_logo.png" alt="logotipo">
-          <span> @silvialcon </span>
-     <div id= "contactos">
+<div class="sidenav" id="mySidenav">
+		<div>
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html">Home</a>
+		<a href="portfolio.html">Portfolio</a>
+		<a href="about.html">About</a>
+		<a href="contactus.html">Contact</a>
+		</div>
+		<div class="bottom">
+		<ul>
+			<li style="display: inline-block; float:left"><a href="http://www.instagram.com"><img class= "redes" src="insta_logo.png" alt="logotipo"></a></li>
+			<li style="display: inline-block; float:left"><a href="http://www.twitter.com"><img class= "redes" src="fotos/twitter.png" alt="logotipo"></a></li>
+			<li style="display: inline-block; float:left"><a href="http://www.linkedin.com"><img class= "redes" src="fotos/linkedin.png" alt="logotipo"></a></li>
+		</ul>
+		</div>
+	</div>
+	<div id="wrap1" class="wrap">
+		<div class="container container1">
+			<div class="caja caja1">
+				<img src="fotos/1.jpg" alt="robot">
+			</div>
+			<div class="caja caja2">
+				Mis comienzos fueron en la animación 3D.  El 3D me interesó desde el momento que tuve conocimiento  de su existencia.  En cuanto tuve ocasión comencé a aprender, la necesidad de animar personajes hizo que aprendiera modeling y rigging. Posteriormente conseguir que su aspecto fuera interesante me hizo aprender lighting y shading .  Los fluidos fueron otro descubrimiento aunque alejados de la metodología  y de mi experiencia anterior no me resistí a probarlo. Es así como hoy, puedo ofrecer  servicios como animador, 3D generalista y fluidos.
+				<br>
+				<br>
+				“I began in 2D classical animation. 3D interested me from the moment I knew of it's existence. At the first opportunity I began to study it, the need to animate characters meant that I had to learn  modelling and rigging. Later I realised that in order to make the exterior appearance interesting I began to study lighting and shading. Fluids were another discovery, outside my prior knowledge and even though I had no experience I couldn't resist mastering them. Thus, today I can offer myself as an animator, 3D generalist who is able to work with fluids.”	
+			</div>
+		</div>
+	</div>
+		<footer id="footer">
          <p><b>Tlf:</b> XXX XXX XXX</p>
          <p><b>E-mail:</b>silvialcon@gmail.com</p>
-    </div>
-	</header>	
+	</footer>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
 
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 </body>
 </html>
